@@ -1,6 +1,8 @@
 # vanilla-js-calculator
 
-![Vanilla JS Quote Calculator](preview.png)
+
+### JS Fiddle Preview
+https://jsfiddle.net/Atlanta30313/vg0aq24r/83/
 
 
 <p align="center">
