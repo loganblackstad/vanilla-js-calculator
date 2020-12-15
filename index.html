@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="well">
+
+<p class="title" style="display:inline"><b>charter</b>UP</p><p style="display:inline; font:25px Arial, sans-serif;"> &nbsp;Get A Quote Tool</p>
+<br>
+<br>
+  <form id="form1" action="#">
+    <div class="form-group">
+      <label for="firstname">First Name:**</label>
+      <input class="form-control" type="text" name="firstname" placeholder="John" required>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name:**</label>
+      <input class="form-control" type="text" name="lastname" placeholder="Doe" required>
+    </div>
+     <div class="form-group">
+      <label for="email">Email:**</label>
+      <input class="form-control" type="text" name="email" placeholder="john.doe@gmail.com" required>
+    </div>
+     <div class="form-group">
+      <label for="company">Company/Organization:</label>
+      <input class="form-control" type="text" name="company" placeholder="ACME rotary club">
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <label for="name" class="label-dropdown">Select a Vehicle: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+    <select id="selectbox1" name='vehicle-type' required>
+    <option value="">Vehicle &hellip;</option>
+    <option value="charter_bus">Charter Bus</option>
+    <option value="mini_bus">Mini Bus</option>
+    <option value="sprinter">Sprinter</option>
+    <option value="party_bus">Party Bus</option>
+    <option value="sedan">Sedan</option>
+    <option value="suv">SUV</option>
+    <option value="limousine">Limousine</option>
+    <option value="trolley">Trolley</option>
+    </select>
+    <br/>
+    <br/>
+    
+    <div class="form-group">
+      <label>Select a Rental Type: &nbsp;&nbsp;&nbsp;</label>
+      <div class="check-boxes">
+      <label class="checkbox-inline">
+        <input type="radio" name="duration" class="radiogroup" id="daily" value="daily" data-value="Days (up to 30 days):" max="30" required>
+        Daily
+      </label>
+      <label class="checkbox-inline">
+        <input type="radio" name="duration" class="radiogroup" id="hourly" value="hourly" data-value="Hours (up to 48 hours):" max="48">
+        Hourly
+      </label>
+       <label class="checkbox-inline">
+        <input type="radio" name="duration" class="radiogroup" id="distance" value="distance" data-value="Distance (up to 2000 miles):" max="2000">
+        Distance (Per Mile)
+      </label>
+      </div>
+    </div>
+
+
+    <div>
+      <label for="quantity" id="dur">Duration:</label>
+      <input type="number" class="input-duration" id="dur-input" name="quantity" min="1" max="2000" required>
+    </div>
+    
+    
+    
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" id="get-a-quote" value="Get A Quote">
+  </form>
+  
+  <div>
+  <br>
+  <br>
+  <p style="width: 214px; display:inline-block;"><b>Your Quote:</b> </p>
+  <p style="display:inline;" id="quote"></p>
+  </div>
+  
+</div>
+    
+    <script src="./calculator.js" async defer></script>
+  </body>
+</html>

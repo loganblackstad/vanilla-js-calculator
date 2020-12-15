@@ -1,0 +1,38 @@
+input {
+    max-width: 530px;
+    }
+    
+.title{
+  font: 25px Arial, sans-serif;
+  color: #08a6f0
+}
+
+#selectbox1 {
+  width: 310px;
+  height: 26px;
+}
+
+.label-dropdown{
+  display:inline-block;
+  width: 214px;
+}
+
+
+.check-boxes {
+   display: inline-block;
+   padding-left: 45px;
+}
+
+
+#dur {
+   width: 214px;
+}
+
+.input-duration {
+  width: 70px;
+}
+
+#get-a-quote{
+  margin-left: 214px;
+}
+
